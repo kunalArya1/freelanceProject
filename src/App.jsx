@@ -10,6 +10,12 @@ const App = () => {
   return (
     <div className="h-screen w-full bg-gray-300 relative overflow-hidden">
       <div className=" h-full w-full bg-[rgba(0,0,0,.4)] absolute">
+        <img
+          className=" h-[8rem] absolute top-14 left-[47%] z-20"
+          src="https://pngimg.com/d/circle_PNG38.png"
+          alt=""
+        />
+
         {/** Left video part */}
         <motion.div
           // onHoverStart={() => setleftbutton(true)}
