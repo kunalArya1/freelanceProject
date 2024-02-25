@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import videobg from "./assets/video.mp4";
+import videobg from "./assets/HomePage.mp4";
 import { motion } from "framer-motion";
 import leftvideo from "./assets/leftvideo.mp4";
 import rightvideo from "./assets/rightvido.mp4";
