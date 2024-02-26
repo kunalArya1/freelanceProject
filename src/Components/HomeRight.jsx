@@ -11,7 +11,8 @@ const HomeRight = () => {
       <motion.div
         // onHoverStart={() => setleftbutton(true)}
         onMouseEnter={() => setrightbutton(true)}
-        className=" h-[15vh] w-[51vh] top-[53%] right-[13.8%] absolute z-10"
+        className=" h-[15%] w-[25%] md:w-[25%] lg:w-[25%] top-[53%] right-[44%]
+        md:right-[13.8%] lg:right-[13.8%] absolute z-10 "
       ></motion.div>
       {/** Left Text Part */}
 
@@ -19,20 +20,20 @@ const HomeRight = () => {
         onMouseLeave={() => setrightbutton(false)}
         initial={{ zIndex: rightbutton ? 20 : 0 }}
         animate={{ zIndex: rightbutton ? 20 : 0 }}
-        className="h-[45%] w-[29%] absolute top-[38%] right-[10%]"
+        className="h-[45%] w-[29%] absolute right-[40%] top-[37%] md:top-[38%] lg:top-[38%] md:right-[10%] lg:right-[10%]"
       >
         <motion.button
-          className="p-8 absolute border-sky-400 w-[85%] left-0 border text-3xl uppercase font-semibold text-white"
+          className="p-8 absolute  border-sky-400  w-[170%] md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
           initial={{
-            top: rightbutton ? "80%" : "33%",
-            width: rightbutton ? "100%" : "85%",
+            top: rightbutton ? "86%" : "33%",
+
             backgroundColor: rightbutton
               ? "rgba(0,0,0,0.2)"
               : "rgb(144, 205, 244)",
           }}
           animate={{
-            top: rightbutton ? "80%" : "33%",
-            width: rightbutton ? "100%" : "85%",
+            top: rightbutton ? "86%" : "33%",
+            scaleX: rightbutton ? 1.2 : 1,
             backgroundColor: rightbutton
               ? "rgba(0,0,0,0.2)"
               : "rgb(144, 205, 244)",
@@ -40,7 +41,7 @@ const HomeRight = () => {
           transition={{ duration: 0.4 }}
         >
           <div className=" flex items-center gap-6">
-            <p>Techanology</p>
+            <p>TechanologyR</p>
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: rightbutton ? 1 : 0 }}

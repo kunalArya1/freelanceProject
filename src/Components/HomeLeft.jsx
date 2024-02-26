@@ -11,7 +11,7 @@ const HomeLeft = () => {
       <motion.div
         // onHoverStart={() => setleftbutton(true)}
         onMouseEnter={() => setleftbutton(true)}
-        className=" h-[15vh] w-[51vh] top-[53%] left-[10%] absolute z-10"
+        className=" h-[15%] w-[25%] lg:h-[15%] lg:w-[25%] md:w-[25%]  md:h-[15%]  top-[34%] md:top-[53%] lg:top-[53%] left-[30%] md:left-[10%] lg:left-[10%] absolute z-10 "
       ></motion.div>
       {/** Left Text Part */}
       <motion.div
@@ -19,20 +19,21 @@ const HomeLeft = () => {
         initial={{ zIndex: leftbutton ? 20 : 0 }}
         animate={{ zIndex: leftbutton ? 20 : 0 }}
         transition={{ duration: 1 }}
-        className="h-[45%] w-[29%] absolute top-[38%] left-[10%] "
+        className="h-[30%] w-[30%] md:h-[35%] lg:h-[45%] md:w-[30%] lg:w-[29%] absolute top-[20%] md:top-[38%] lg:top-[38%] left-[30%] md:left-[10%] lg:left-[10%]"
       >
         <motion.button
-          className="p-8 absolute  border-sky-400 w-[85%] left-0 border text-3xl uppercase font-semibold text-white"
+          className="p-8 absolute  border-sky-400  w-[170%]  md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
           initial={{
-            top: leftbutton ? "80%" : "33%",
-            width: leftbutton ? "100%" : "85%",
+            top: leftbutton ? "86%" : "33%",
             backgroundColor: leftbutton
               ? "rgba(0,0,0,0.2)"
               : "rgb(144, 205, 244)",
           }}
           animate={{
-            top: leftbutton ? "80%" : "33%",
-            width: leftbutton ? "100%" : "85%",
+            top: leftbutton ? "86%" : "33%",
+            // width: leftbutton ? "100%" : "85%",
+            scaleX: leftbutton ? 1.2 : 1,
+
             backgroundColor: leftbutton
               ? "rgba(0,0,0,0.2)"
               : "rgb(144, 205, 244)",
@@ -40,7 +41,7 @@ const HomeLeft = () => {
           transition={{ duration: 0.4 }}
         >
           <div className=" flex items-center gap-6">
-            <p>Techanology</p>
+            <p>TechanologyL</p>
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: leftbutton ? 1 : 0 }}
