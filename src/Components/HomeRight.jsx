@@ -23,7 +23,7 @@ const HomeRight = () => {
         className="h-[45%] w-[29%] absolute right-[45%] top-[50%] md:top-[38%] lg:top-[38%] md:right-[10%] lg:right-[10%]"
       >
         <motion.button
-          className="p-8 absolute  border-sky-400  w-[180%] md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
+          className="p-8 absolute  border-sky-400  w-[190%] md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
           initial={{
             top: rightbutton ? "86%" : "33%",
 
