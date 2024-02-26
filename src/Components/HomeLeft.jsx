@@ -11,7 +11,7 @@ const HomeLeft = () => {
       <motion.div
         // onHoverStart={() => setleftbutton(true)}
         onMouseEnter={() => setleftbutton(true)}
-        className=" h-[15%] w-[25%] lg:h-[15%] lg:w-[25%] md:w-[25%]  md:h-[15%]  top-[34%] md:top-[53%] lg:top-[53%] left-[30%] md:left-[10%] lg:left-[10%] absolute z-10 "
+        className=" h-[13%] w-[55%] lg:h-[15%] lg:w-[25%] md:w-[25%]  md:h-[15%]  top-[47%] md:top-[53%] lg:top-[53%] left-[25%] md:left-[10%] lg:left-[10%] absolute z-10"
       ></motion.div>
       {/** Left Text Part */}
       <motion.div
@@ -19,7 +19,7 @@ const HomeLeft = () => {
         initial={{ zIndex: leftbutton ? 20 : 0 }}
         animate={{ zIndex: leftbutton ? 20 : 0 }}
         transition={{ duration: 1 }}
-        className="h-[30%] w-[30%] md:h-[35%] lg:h-[45%] md:w-[30%] lg:w-[29%] absolute top-[20%] md:top-[38%] lg:top-[38%] left-[30%] md:left-[10%] lg:left-[10%]"
+        className="h-[30%] w-[30%] md:h-[35%] lg:h-[45%] md:w-[30%] lg:w-[29%] absolute top-[40%] md:top-[38%] lg:top-[38%] left-[25%] md:left-[10%] lg:left-[10%]"
       >
         <motion.button
           className="p-8 absolute  border-sky-400  w-[180%]  md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"

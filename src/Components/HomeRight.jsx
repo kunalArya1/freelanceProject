@@ -11,8 +11,8 @@ const HomeRight = () => {
       <motion.div
         // onHoverStart={() => setleftbutton(true)}
         onMouseEnter={() => setrightbutton(true)}
-        className=" h-[15%] w-[25%] md:w-[25%] lg:w-[25%] top-[53%] right-[44%]
-        md:right-[13.8%] lg:right-[13.8%] absolute z-10 "
+        className=" h-[13%] w-[52%] md:w-[25%] lg:w-[25%] top-[62%] right-[22%]
+        md:right-[13.8%] lg:right-[13.8%] absolute z-10"
       ></motion.div>
       {/** Left Text Part */}
 
@@ -20,7 +20,7 @@ const HomeRight = () => {
         onMouseLeave={() => setrightbutton(false)}
         initial={{ zIndex: rightbutton ? 20 : 0 }}
         animate={{ zIndex: rightbutton ? 20 : 0 }}
-        className="h-[45%] w-[29%] absolute right-[40%] top-[37%] md:top-[38%] lg:top-[38%] md:right-[10%] lg:right-[10%]"
+        className="h-[45%] w-[29%] absolute right-[45%] top-[50%] md:top-[38%] lg:top-[38%] md:right-[10%] lg:right-[10%]"
       >
         <motion.button
           className="p-8 absolute  border-sky-400  w-[180%] md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
