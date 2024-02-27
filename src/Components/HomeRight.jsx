@@ -3,6 +3,7 @@ import ButtonContext from "../utils/ButtonContext";
 import rightvideo from "../assets/rightvido.mp4";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HomeRight = () => {
   const { rightbutton, setrightbutton } = useContext(ButtonContext);
@@ -22,35 +23,37 @@ const HomeRight = () => {
         animate={{ zIndex: rightbutton ? 20 : 0 }}
         className="h-[45%] w-[29%] absolute right-[45%] top-[50%] md:top-[38%] lg:top-[38%] md:right-[10%] lg:right-[10%]"
       >
-        <motion.button
-          className="px-8 py-6  md:p-8 lg:p-8 absolute  border-sky-400  w-[190%] md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
-          initial={{
-            top: rightbutton ? "86%" : "33%",
+        <Link to="/infrastructure">
+          <motion.button
+            className="px-8 py-6  md:p-8 lg:p-8 absolute  border-sky-400  w-[190%] md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
+            initial={{
+              top: rightbutton ? "86%" : "33%",
 
-            backgroundColor: rightbutton
-              ? "rgba(0,0,0,0.2)"
-              : "rgb(144, 205, 244)",
-          }}
-          animate={{
-            top: rightbutton ? "86%" : "33%",
-            scaleX: rightbutton ? 1.2 : 1,
-            backgroundColor: rightbutton
-              ? "rgba(0,0,0,0.2)"
-              : "rgb(144, 205, 244)",
-          }}
-          transition={{ duration: 0.4 }}
-        >
-          <div className=" flex items-center gap-6">
-            <p>TechanologyR</p>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: rightbutton ? 1 : 0 }}
-              className=" inline-block"
-            >
-              <FaArrowRightLong />
-            </motion.span>
-          </div>
-        </motion.button>
+              backgroundColor: rightbutton
+                ? "rgba(0,0,0,0.2)"
+                : "rgb(144, 205, 244)",
+            }}
+            animate={{
+              top: rightbutton ? "86%" : "33%",
+              scaleX: rightbutton ? 1.2 : 1,
+              backgroundColor: rightbutton
+                ? "rgba(0,0,0,0.2)"
+                : "rgb(144, 205, 244)",
+            }}
+            transition={{ duration: 0.4 }}
+          >
+            <div className=" flex items-center gap-6">
+              <p>Infrastructure</p>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: rightbutton ? 1 : 0 }}
+                className=" inline-block"
+              >
+                <FaArrowRightLong />
+              </motion.span>
+            </div>
+          </motion.button>
+        </Link>
         <motion.div
           initial={{
             top: rightbutton ? "0%" : "80%",

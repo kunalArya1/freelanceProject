@@ -3,6 +3,7 @@ import ButtonContext from "../utils/ButtonContext";
 import leftvideo from "../assets/leftvideo.mp4";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HomeLeft = () => {
   const { leftbutton, setleftbutton } = useContext(ButtonContext);
@@ -21,36 +22,38 @@ const HomeLeft = () => {
         transition={{ duration: 1 }}
         className="h-[30%] w-[30%] md:h-[35%] lg:h-[45%] md:w-[30%] lg:w-[29%] absolute top-[40%] md:top-[38%] lg:top-[38%] left-[25%] md:left-[10%] lg:left-[10%]"
       >
-        <motion.button
-          className="px-8 py-7  absolute  border-sky-400  w-[190%]  md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
-          initial={{
-            top: leftbutton ? "86%" : "33%",
-            backgroundColor: leftbutton
-              ? "rgba(0,0,0,0.2)"
-              : "rgb(144, 205, 244)",
-          }}
-          animate={{
-            top: leftbutton ? "86%" : "33%",
-            // width: leftbutton ? "100%" : "85%",
-            scaleX: leftbutton ? 1.2 : 1,
+        <Link to="/technology">
+          <motion.button
+            className="px-8 py-7  absolute  border-sky-400  w-[190%]  md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
+            initial={{
+              top: leftbutton ? "86%" : "33%",
+              backgroundColor: leftbutton
+                ? "rgba(0,0,0,0.2)"
+                : "rgb(144, 205, 244)",
+            }}
+            animate={{
+              top: leftbutton ? "86%" : "33%",
+              // width: leftbutton ? "100%" : "85%",
+              scaleX: leftbutton ? 1.2 : 1,
 
-            backgroundColor: leftbutton
-              ? "rgba(0,0,0,0.2)"
-              : "rgb(144, 205, 244)",
-          }}
-          transition={{ duration: 0.4 }}
-        >
-          <div className=" flex items-center gap-6">
-            <p>TechanologyL</p>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: leftbutton ? 1 : 0 }}
-              className=" inline-block"
-            >
-              <FaArrowRightLong />
-            </motion.span>
-          </div>
-        </motion.button>
+              backgroundColor: leftbutton
+                ? "rgba(0,0,0,0.2)"
+                : "rgb(144, 205, 244)",
+            }}
+            transition={{ duration: 0.4 }}
+          >
+            <div className=" flex items-center gap-6">
+              <p>Techanology</p>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: leftbutton ? 1 : 0 }}
+                className=" inline-block"
+              >
+                <FaArrowRightLong />
+              </motion.span>
+            </div>
+          </motion.button>
+        </Link>
         <motion.div
           initial={{
             top: leftbutton ? "0%" : "80%",
