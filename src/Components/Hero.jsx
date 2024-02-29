@@ -13,7 +13,7 @@ const Hero = () => {
         width: "100vw",
       }}
     >
-      <div className=" h-screen w-screen bg-[rgba(0,0,0,0.6)]">
+      <div className=" h-screen w-screen bg-[rgba(0,0,0,0.7)]">
         <Navbar />
       </div>
     </div>
