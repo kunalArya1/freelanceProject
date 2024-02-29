@@ -42,10 +42,9 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex items-center gap-9 font-bold text-xl">
-        <p>Home</p>
-        <p>Blog</p>
-        <p>About</p>
-        <p>Contact Us</p>
+        <p>Explore</p>
+        <p>About us</p>
+        <p>Media</p>
       </div>
 
       {/* Hamburger menu button for mobile screens */}
@@ -103,16 +102,13 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center gap-9 font-bold text-xl p-8">
           <li onClick={toggleMenu}>
-            <p>Home</p>
+            <p>Explore</p>
           </li>
           <li onClick={toggleMenu}>
-            <p>Blog</p>
+            <p>About Us</p>
           </li>
           <li onClick={toggleMenu}>
-            <p>About</p>
-          </li>
-          <li onClick={toggleMenu}>
-            <p>Contact Us</p>
+            <p>Media</p>
           </li>
         </ul>
       </div>
