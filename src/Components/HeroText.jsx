@@ -3,7 +3,7 @@ import React from "react";
 const HeroText = () => {
   return (
     <>
-      <div className=" text-white p-8 py-[13vh] lg:py-[19vh]">
+      <div className=" text-white p-8 py-[8vh] lg:py-[19vh]">
         <div className=" flex items-center gap-3 text-yellow-400 py-[2vh] ">
           <div className=" w-10 md:w-20 lg:w-12 h-[0.2rem] mt-1 bg-yellow-400"></div>
           <p className=" text-md md:text-3xl lg:text-xl">
