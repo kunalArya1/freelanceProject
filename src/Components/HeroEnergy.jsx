@@ -11,7 +11,7 @@ const HeroEnergy = () => {
             src="https://s3-alpha-sig.figma.com/img/2977/5450/1697ac35049d85bd676d940a70655e56?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=llGpZ4CPF3Yzy8zkJVSmKHsrZOuVzuci4Bquk0LyBFuh9fdzVoGpVpS4fhXVpVjgES1X4wd5sjcYrdoCKJa8Fp3gl1qZpBccf29G9vc2prxFdN9~AUUPCQ2T1NzhShKLnpGQa5iOj9MbTT8Y78pxezlsUFgmabk0HbytyaIkcsys6LLo9YxYf5iZoAJMBykvPPL2dNjFT9Wgw9E5~uMXeTlTvdaokbmDu3X7s4aWPxg76IQ59J3APn0OswA74e3ZOa23tr2w2hVZiRNLAc8Kq8D72ANAlvCYoFie4aK6bH02lGChBiOd0Zew6vgZI10PRdtKDOzPmvJO9SrT723p-A__"
             alt=""
           />
-          <p className=" absolute z-30">Solar Energy</p>
+          <p>Solar Energy</p>
         </div>
         <div className="h-[35vh] lg:h-[40vh] lg:w-[45vw] w-[80vw] m-auto mt-10">
           <img
