@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./NavBar";
 import HeroText from "./HeroText";
+import HeroEnergy from "./HeroEnergy";
 
 const Hero = () => {
   return (
@@ -14,9 +15,10 @@ const Hero = () => {
         width: "100vw",
       }}
     >
-      <div className=" h-screen w-screen bg-[rgba(0,0,0,0.7)] overflow-x-hidden">
+      <div className=" w-screen bg-[rgba(0,0,0,0.7)] overflow-x-hidden bg-gradient-to-b from-0B1D26 to-0B1D26">
         <Navbar />
         <HeroText />
+        <HeroEnergy />
       </div>
     </div>
   );
