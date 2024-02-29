@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./NavBar";
+import HeroText from "./HeroText";
 
 const Hero = () => {
   return (
@@ -15,6 +16,7 @@ const Hero = () => {
     >
       <div className=" h-screen w-screen bg-[rgba(0,0,0,0.7)]">
         <Navbar />
+        <HeroText />
       </div>
     </div>
   );

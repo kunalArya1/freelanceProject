@@ -95,7 +95,7 @@ const Navbar = () => {
 
       {/* Mobile menu overlay using conditional rendering */}
       <div
-        className={`absolute top-[10vh] left-0 bg-[rgba(0,0,0,0.5)] w-full text-white md:hidden ${
+        className={`absolute top-[10vh] left-0 bg-[rgba(0,0,0,0.9)] w-full text-white md:hidden ${
           isOpen
             ? "h-screen"
             : "h-0 overflow-hidden transition-all duration-300 ease-in-out"
