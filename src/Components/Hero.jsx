@@ -10,6 +10,7 @@ import Readmore from "./Readmore";
 import { ReviewSlider } from "./ReviewSlider";
 import OurLatestBlog from "./OurLatestBlog";
 import NewsLetter from "./NewsLetter";
+import Footer from "./Footer";
 
 const Hero = () => {
   return (
@@ -36,6 +37,7 @@ const Hero = () => {
       <ReviewSlider />
       <OurLatestBlog />
       <NewsLetter />
+      <Footer />
     </div>
   );
 };
