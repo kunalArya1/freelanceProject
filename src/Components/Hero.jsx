@@ -6,6 +6,7 @@ import VideoFullPage from "./VideoFullPage";
 import ReactProject from "./ReactProject";
 import OurStrategyImage from "./OurStrategyImage";
 import OurClient from "./OurClient";
+import Readmore from "./Readmore";
 
 const Hero = () => {
   return (
@@ -28,6 +29,7 @@ const Hero = () => {
       <ReactProject />
       <OurStrategyImage />
       <OurClient />
+      <Readmore/>
     </div>
   );
 };
