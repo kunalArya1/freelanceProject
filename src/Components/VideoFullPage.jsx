@@ -3,7 +3,7 @@ import fullpageVido from "../assets//infrastructure/infrapagefullvideo.mp4";
 
 const VideoFullPage = () => {
   return (
-    <div className=" h-[74vh] lg:h-[100vh]  bg-black pt-14 lg:p-8">
+    <div className=" h-[73vh] lg:h-[100vh]  bg-black pt-14 lg:p-8">
       <div className=" w-[100%] h-[65%] lg:h-[90%] lg:w-[96%]  absolute bg-[rgba(0,0,0,0.4)]">
         {/** Right Side Text */}
         <div className="h-[11vh] lg:h-[17vh] w-[65vw] md:w-[37%] lg:w-[37%] bg-[rgba(181,168,140,0.6)] absolute top-[60%] md:top-[61%] lg:top-[65%]">
