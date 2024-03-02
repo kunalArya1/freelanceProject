@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./NavBar";
 import HeroText from "./HeroText";
 import HeroEnergy from "./HeroEnergy";
+import VideoFullPage from "./VideoFullPage";
 
 const Hero = () => {
   return (
@@ -12,14 +13,14 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
-        width: "100vw",
       }}
     >
-      <div className=" w-screen bg-[rgba(0,0,0,0.7)] overflow-x-hidden bg-gradient-to-b from-0B1D26 to-0B1D26">
+      <div className="h-[100vh] lg:w-[98.7vw] bg-[rgba(0,0,0,0.7)] overflow-x-hidden bg-gradient-to-b from-0B1D26 to-0B1D26">
         <Navbar />
         <HeroText />
-        <HeroEnergy />
       </div>
+      <HeroEnergy />
+      <VideoFullPage/>
     </div>
   );
 };
