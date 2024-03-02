@@ -15,9 +15,7 @@ const ReactProject = () => {
           </button>
         </div>
       </div>
-      <div className=" bg-red-200 h-[82%] lg:px-9 flex gap-5 items-center">
-        <div className=" h-[93%] w-[27%] bg-blue-400"></div>
-        <div className=" h-[93%] w-[27%] bg-blue-400"></div>
+      <div className="  h-[82%]  flex gap-5 items-center p-1">
         <div className=" h-[93%] w-[27%] bg-blue-400"></div>
         <div className=" h-[93%] w-[27%] bg-blue-400"></div>
         <div className=" h-[93%] w-[27%] bg-blue-400"></div>
