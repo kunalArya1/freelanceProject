@@ -7,6 +7,9 @@ import ReactProject from "./ReactProject";
 import OurStrategyImage from "./OurStrategyImage";
 import OurClient from "./OurClient";
 import Readmore from "./Readmore";
+import { ReviewSlider } from "./ReviewSlider";
+import OurLatestBlog from "./OurLatestBlog";
+import NewsLetter from "./NewsLetter";
 
 const Hero = () => {
   return (
@@ -29,7 +32,10 @@ const Hero = () => {
       <ReactProject />
       <OurStrategyImage />
       <OurClient />
-      <Readmore/>
+      <Readmore />
+      <ReviewSlider />
+      <OurLatestBlog />
+      <NewsLetter />
     </div>
   );
 };
