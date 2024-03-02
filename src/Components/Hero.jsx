@@ -3,6 +3,7 @@ import Navbar from "./NavBar";
 import HeroText from "./HeroText";
 import HeroEnergy from "./HeroEnergy";
 import VideoFullPage from "./VideoFullPage";
+import ReactProject from "./ReactProject";
 
 const Hero = () => {
   return (
@@ -20,7 +21,8 @@ const Hero = () => {
         <HeroText />
       </div>
       <HeroEnergy />
-      <VideoFullPage/>
+      <VideoFullPage />
+      <ReactProject />
     </div>
   );
 };
