@@ -3,7 +3,7 @@ import Navbar from "./NavBar";
 import HeroText from "./HeroText";
 import HeroEnergy from "./HeroEnergy";
 import VideoFullPage from "./VideoFullPage";
-import ReactProject from "./ReactProject";
+import RecentProject from "./RecentProject";
 import OurStrategyImage from "./OurStrategyImage";
 import OurClient from "./OurClient";
 import Readmore from "./Readmore";
@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       <HeroEnergy />
       <VideoFullPage />
-      <ReactProject />
+      <RecentProject />
       <OurStrategyImage />
       <OurClient />
       <Readmore />
