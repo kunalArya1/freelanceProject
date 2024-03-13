@@ -5,7 +5,7 @@ const ReactProject = () => {
   return (
     <div className=" h-[50vh] lg:h-[78vh]  bg-black text-white p-8 overflow-hidden">
       <div className=" flex justify-between items-center lg:px-2 lg:mb-6 mb-8">
-        <p className=" font-bold text-[1.2rem] lg:text-2xl">
+        <p className=" font-bold text-[1.2rem] lg:text-2xl font-Montserrat">
           Our Recent Projects
         </p>
         <div className=" flex gap-5 ">

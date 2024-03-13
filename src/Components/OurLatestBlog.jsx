@@ -6,7 +6,7 @@ const OurLatestBlog = () => {
   return (
     <div className=" h-[88%] w-full bg-black p-8">
       <div className=" flex text-white justify-between mb-10">
-        <p className=" font-semibold text-2xl">Our Latest Blogs</p>
+        <p className=" font-semibold text-2xl font-Montserrat">Our Latest Blogs</p>
         <div className=" flex gap-5 ">
           <button className=" lg:h-[7vh] lg:w-[8vh] bg-[rgba(32,157,218,1)]">
             <FaArrowLeft className=" m-auto" />

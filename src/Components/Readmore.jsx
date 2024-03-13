@@ -6,12 +6,12 @@ const Readmore = () => {
   return (
     <div className=" h-[80%] lg:h-[70%] w-full bg-black text-white p-8 md:px-10 px-8 lg:px-10 lg:flex md:flex  justify-between pt-[3rem]  md:pt-[6rem] lg:pt-[6rem]">
       <div className=" md:w-[25%] lg:w-[25%] h-[50%]  md:h-[90%] lg:h-[90%]">
-        <p className=" font-bold text-[1.7rem] md:text-[1.2rem] lg:text-[1.2rem] leading-[1.6rem] md:leading-[1.3rem] lg:leading-[1.3rem] mb-5 text-gray-300">
+        <p className=" font-bold text-[1.7rem] md:text-[1.2rem] lg:text-[1.2rem] leading-[1.6rem] md:leading-[1.3rem] lg:leading-[1.3rem] mb-5 text-gray-300 font-Montserrat">
           Renewable energy sources <br /> are expected to provide <br /> between
           45 and 50 <br />
           percent of global <br /> generation by 2030
         </p>
-        <p className=" text-[0.97rem] md:text-[0.8rem] lg:text-[0.8rem] text-left leading-[1.03rem] mb-6  text-gray-400 lg:text-gray-500">
+        <p className=" text-[0.97rem] md:text-[0.8rem] lg:text-[0.8rem] text-left leading-[1.03rem] mb-6  text-gray-400 lg:text-gray-500 font-Montserrat">
           This substantial uptick underscores the accelerating shift towards
           cleaner, more sustainable energy options. Factors driving this trend
           include advancements in technology, decreasing costs of renewable

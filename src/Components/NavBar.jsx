@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State for menu visibility
@@ -9,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`h-[10vh] w-full text-white flex justify-between items-center p-8 py-10 cursor-pointer  ${
+      className={`h-[10vh] w-full text-white flex justify-start items-center p-8 py-10 cursor-pointer  ${
         isOpen ? "bg-opacity-75" : ""
       }`}
     >
@@ -41,10 +42,12 @@ const Navbar = () => {
         </svg>
       </div>
 
-      <div className="hidden md:flex items-center gap-9 font-bold text-xl">
-        <p>Explore</p>
-        <p>About us</p>
+      <div className="hidden md:flex items-center gap-9  ml-[17%] text-xl">
         <p>Media</p>
+        <Link to="/contact">
+          <p>Contact us</p>
+        </Link>
+        <p>Blogs</p>
       </div>
 
       {/* Hamburger menu button for mobile screens */}
@@ -102,13 +105,13 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center gap-9 font-bold text-xl p-8">
           <li onClick={toggleMenu}>
-            <p>Explore</p>
-          </li>
-          <li onClick={toggleMenu}>
-            <p>About Us</p>
-          </li>
-          <li onClick={toggleMenu}>
             <p>Media</p>
+          </li>
+          <li onClick={toggleMenu}>
+            <p>Contact Us</p>
+          </li>
+          <li onClick={toggleMenu}>
+            <p>Blogs</p>
           </li>
         </ul>
       </div>

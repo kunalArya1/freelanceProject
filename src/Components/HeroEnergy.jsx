@@ -30,10 +30,10 @@ const HeroEnergy = () => {
           <p className=" text-white">Wind Energy</p>
         </div>
         <div className=" h-[45vh] lg:h-[35vh] lg:w-[50vw] w-[80vw] m-auto">
-          <p className=" lg:font-bold lg:text-[1.4rem] lg:leading-8 font-bold text-[1.6rem]">
+          <p className=" lg:font-bold lg:text-[1.4rem] lg:leading-8 font-bold text-[1.6rem] font-Montserrat">
             A Glimpse into Electric, Wind, and Solar Energy
           </p>
-          <p className="lg:text-[0.8rem] lg:leading-[1rem] mt-3">
+          <p className="lg:text-[0.8rem] lg:leading-[1rem] mt-3 font-Montserrat">
             Everest Technology is inspired by the all mighty Mt Everest –
             highest peak in the world thrive to be leading IT services provider
             in the Middle East region and globally. Everest Technology is the
