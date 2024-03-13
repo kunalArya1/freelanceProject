@@ -5,6 +5,7 @@ import HomeRight from "./Components/HomeRight";
 import logo from "./assets/logo.png";
 
 const App = () => {
+  document.title = "Home";
   return (
     <div className="h-screen w-full relative overflow-hidden">
       <div className=" h-full w-full bg-[rgba(0,0,0,.4)] absolute">

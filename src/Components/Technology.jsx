@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Technology = () => {
-  return (
-    <div>Technology</div>
-  )
-}
+  document.title = "Technology";
+  return <div>Technology</div>;
+};
 
-export default Technology
+export default Technology;
