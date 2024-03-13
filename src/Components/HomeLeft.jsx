@@ -12,40 +12,35 @@ const HomeLeft = () => {
       <motion.div
         // onHoverStart={() => setleftbutton(true)}
         onMouseEnter={() => setleftbutton(true)}
-        className=" h-[13%] w-[55%] lg:h-[15%] lg:w-[25%] md:w-[25%]  md:h-[15%]  top-[47%] md:top-[53%] lg:top-[53%] left-[25%] md:left-[10%] lg:left-[10%] absolute z-10"
+        className=" h-[13%] w-[55%] hidden lg:block lg:h-[13.5%] lg:w-[26%] md:w-[25%]  md:h-[15%]  top-[47%] md:top-[53%] lg:top-[53%] left-[25%] md:left-[10%] lg:left-[10%] absolute z-10 bg-red-600"
       ></motion.div>
       {/** Left Text Part */}
       <motion.div
         onMouseLeave={() => setleftbutton(false)}
-        initial={{ zIndex: leftbutton ? 20 : 0 }}
         animate={{ zIndex: leftbutton ? 20 : 0 }}
         transition={{ duration: 1 }}
-        className="h-[30%] w-[30%] md:h-[35%] lg:h-[45%] md:w-[30%] lg:w-[29%] absolute top-[40%] md:top-[38%] lg:top-[38%] left-[25%] md:left-[10%] lg:left-[10%]"
+        className="h-[30%] w-[30%] hidden lg:block md:h-[35%] lg:h-[45%] md:w-[30%] lg:w-[29%] absolute top-[40%] md:top-[38%] lg:top-[38%] left-[25%] md:left-[10%] lg:left-[10%]"
       >
         <Link to="/technology">
           <motion.button
-            className="px-8 py-7  absolute  border-sky-400  w-[190%]  md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase font-semibold origin-left text-white"
-            initial={{
-              top: leftbutton ? "86%" : "33%",
-              backgroundColor: leftbutton
-                ? "rgba(0,0,0,0.2)"
-                : "rgb(144, 205, 244)",
-            }}
+            className="px-4 py-7 hidden lg:block md:p-6 lg:p-6 absolute  border-sky-400  w-[190%]  md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl   uppercase origin-left text-white"
             animate={{
               top: leftbutton ? "86%" : "33%",
-              // width: leftbutton ? "100%" : "85%",
               scaleX: leftbutton ? 1.2 : 1,
-
               backgroundColor: leftbutton
                 ? "rgba(0,0,0,0.2)"
-                : "rgb(144, 205, 244)",
+                : "rgba(100, 174, 223, 0.5)",
             }}
             transition={{ duration: 0.4 }}
           >
             <div className=" flex items-center gap-6">
-              <p>Techanology</p>
+              <motion.p
+                animate={{ marginLeft: leftbutton ? "0px" : "30px" }}
+                className=" ml-8"
+              >
+                Techanology
+              </motion.p>
               <motion.span
-                initial={{ opacity: 0 }}
                 animate={{ opacity: leftbutton ? 1 : 0 }}
                 className=" inline-block"
               >
@@ -55,10 +50,6 @@ const HomeLeft = () => {
           </motion.button>
         </Link>
         <motion.div
-          initial={{
-            top: leftbutton ? "0%" : "80%",
-            opacity: leftbutton ? 1 : 0,
-          }}
           animate={{
             top: leftbutton ? "0%" : "80%",
             opacity: leftbutton ? 1 : 0,
@@ -67,13 +58,13 @@ const HomeLeft = () => {
           className=" absolute top[0%] text-white p-2"
         >
           <div className=" flex items-center">
-            <div className=" h-1 w-16 bg-orange-500 mt-2"></div>
-            <p className=" text-xl ml-10 mt-2 text-orange-500">
+            <div className=" h-1 w-16 bg-[#FBD784] mt-2"></div>
+            <p className=" text-md ml-10 mt-2 text-[#FBD784] uppercase">
               Everest Technology
             </p>
           </div>
 
-          <p className=" text-4xl font-bold mt-5 mb-8">
+          <p className=" text-4xl  mt-5 mb-8 font-playfair">
             Elevate Your Business <br /> Beyoond Peaks!
           </p>
 
@@ -84,7 +75,6 @@ const HomeLeft = () => {
       </motion.div>
 
       <motion.div
-        initial={{ left: leftbutton ? "0%" : "-100%" }}
         animate={{ left: leftbutton ? "0%" : "-100%" }}
         transition={{ duration: 0.4 }}
         className=" h-screen w-full bg-black absolute left-[-100%]"

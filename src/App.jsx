@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import videobg from "./assets/HomePage.mp4";
 import HomeLeft from "./Components/HomeLeft";
 import HomeRight from "./Components/HomeRight";
+import logo from "./assets/logo.png";
 
 const App = () => {
   return (
     <div className="h-screen w-full relative overflow-hidden">
       <div className=" h-full w-full bg-[rgba(0,0,0,.4)] absolute">
+        {/** LOGO  */}
+
+        <div className=" absolute left-[50%] -top-[4%] h-[19%] w-[10%]  transform -translate-x-1/2 translate-y-1/2">
+          <div className=" h-full w-full object-cover">
+            <img src={logo} alt="" />
+          </div>
+        </div>
         <HomeLeft />
         <HomeRight />
       </div>

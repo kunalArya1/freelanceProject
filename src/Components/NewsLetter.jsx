@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const NewsLetter = () => {
   return (
-    <div className=" h-[40%] md:h-[50%] lg:h-[50%] w-full bg-black p-8 text-white text-center">
+    <div className=" h-[40%] md:h-[50%] lg:h-[6 0%] w-full bg-black p-8 text-white text-center">
       <p className=" text-4xl  ">Subscribe to Our Newsletter</p>
       <p className=" mt-5">Get in touch for all new updates.</p>
       <div className=" mt-14">
