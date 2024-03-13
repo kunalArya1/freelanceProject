@@ -17,6 +17,15 @@ const HomeRight = () => {
       ></motion.div>
       {/** Left Text Part */}
 
+      {/** MOBILE BUTTON */}
+      <div className="absolute top-[45%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+        <Link to="/infrastructure">
+          <button className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[79vw] md:w-[50vw] text-3xl text-white uppercase">
+            Infrastructure
+          </button>
+        </Link>
+      </div>
+
       <motion.div
         onMouseLeave={() => setrightbutton(false)}
         animate={{ zIndex: rightbutton ? 20 : 0 }}
@@ -47,8 +56,6 @@ const HomeRight = () => {
             </div>
           </motion.button>
         </Link>
-
-        {/** MOBILE BUTTON */}
 
         <motion.div
           animate={{

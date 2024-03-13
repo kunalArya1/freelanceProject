@@ -14,6 +14,16 @@ const HomeLeft = () => {
         onMouseEnter={() => setleftbutton(true)}
         className=" h-[13%] w-[55%] hidden lg:block lg:h-[13.5%] lg:w-[26%] md:w-[25%]  md:h-[15%]  top-[47%] md:top-[53%] lg:top-[53%] left-[25%] md:left-[10%] lg:left-[10%] absolute z-10"
       ></motion.div>
+
+      {/** MOBILE BUTTON */}
+      <div className="absolute top-[57%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+        <Link to="/technology">
+          <button className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[79vw] md:w-[50vw] text-3xl text-white uppercase">
+            Techanology
+          </button>
+        </Link>
+      </div>
+
       {/** Left Text Part */}
       <motion.div
         onMouseLeave={() => setleftbutton(false)}
