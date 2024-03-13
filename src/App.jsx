@@ -10,8 +10,8 @@ const App = () => {
       <div className=" h-full w-full bg-[rgba(0,0,0,.4)] absolute">
         {/** LOGO  */}
 
-        <div className=" absolute left-[50%] lg:-top-[4%] h-[10%] lg:h-[19%] lg:w-[10%] z-40  transform -translate-x-1/2 translate-y-1/2">
-          <div className=" h-full w-full object-cover">
+        <div className=" absolute left-[50%] lg:-top-[4%] h-[10%] md:h-[10%] md:w-[5%] lg:h-[19%] lg:w-[10%] z-40  transform -translate-x-1/2 translate-y-1/2">
+          <div className="h-full w-full object-cover">
             <img src={logo} alt="" />
           </div>
         </div>

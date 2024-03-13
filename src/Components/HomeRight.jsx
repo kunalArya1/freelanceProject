@@ -17,10 +17,10 @@ const HomeRight = () => {
       ></motion.div>
       {/** Left Text Part */}
 
-      {/** MOBILE BUTTON */}
-      <div className="absolute top-[45%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+      {/** MOBILE BUTTON  */}
+      <div className="absolute top-[48%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
         <Link to="/infrastructure">
-          <button className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[79vw] md:w-[50vw] text-3xl text-white uppercase">
+          <button className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[87vw] md:w-[50vw] text-3xl text-white uppercase">
             Infrastructure
           </button>
         </Link>
@@ -28,12 +28,20 @@ const HomeRight = () => {
 
       <motion.div
         onMouseLeave={() => setrightbutton(false)}
+        initial={{ zIndex: rightbutton ? 20 : 0 }}
         animate={{ zIndex: rightbutton ? 20 : 0 }}
         className="h-[45%] w-[29%] hidden lg:block absolute right-[45%] top-[50%] md:top-[38%] lg:top-[38%] md:right-[10%] lg:right-[10%]"
       >
         <Link to="/infrastructure">
           <motion.button
             className="px-8 py-6  md:p-6 lg:p-6 absolute  border-sky-400  w-[190%] md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl uppercase origin-left text-white"
+            initial={{
+              top: rightbutton ? "86%" : "33%",
+              scaleX: rightbutton ? 1.2 : 1,
+              backgroundColor: rightbutton
+                ? "rgba(0,0,0,0.2)"
+                : "rgba(100, 174, 223, 0.5)",
+            }}
             animate={{
               top: rightbutton ? "86%" : "33%",
               scaleX: rightbutton ? 1.2 : 1,
@@ -44,10 +52,14 @@ const HomeRight = () => {
             transition={{ duration: 0.4 }}
           >
             <div className=" flex items-center gap-6">
-              <motion.p animate={{ marginLeft: rightbutton ? "0px" : "24px" }}>
+              <motion.p
+                initial={{ marginLeft: rightbutton ? "0px" : "24px" }}
+                animate={{ marginLeft: rightbutton ? "0px" : "24px" }}
+              >
                 Infrastructure
               </motion.p>
               <motion.span
+                initial={{ opacity: rightbutton ? 1 : 0 }}
                 animate={{ opacity: rightbutton ? 1 : 0 }}
                 className=" inline-block"
               >
@@ -58,6 +70,10 @@ const HomeRight = () => {
         </Link>
 
         <motion.div
+          initial={{
+            top: rightbutton ? "0%" : "80%",
+            opacity: rightbutton ? 1 : 0,
+          }}
           animate={{
             top: rightbutton ? "0%" : "80%",
             opacity: rightbutton ? 1 : 0,
@@ -83,6 +99,7 @@ const HomeRight = () => {
       </motion.div>
 
       <motion.div
+        initial={{ left: rightbutton ? "0%" : "100%" }}
         animate={{ left: rightbutton ? "0%" : "100%" }}
         transition={{ duration: 0.4 }}
         className=" h-screen w-full bg-black absolute left-[-100%]"

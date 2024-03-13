@@ -16,9 +16,9 @@ const HomeLeft = () => {
       ></motion.div>
 
       {/** MOBILE BUTTON */}
-      <div className="absolute top-[57%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-[67%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
         <Link to="/technology">
-          <button className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[79vw] md:w-[50vw] text-3xl text-white uppercase">
+          <button className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[87vw] md:w-[50vw] text-3xl text-white uppercase">
             Techanology
           </button>
         </Link>
@@ -27,6 +27,7 @@ const HomeLeft = () => {
       {/** Left Text Part */}
       <motion.div
         onMouseLeave={() => setleftbutton(false)}
+        initial={{ zIndex: leftbutton ? 20 : 0 }}
         animate={{ zIndex: leftbutton ? 20 : 0 }}
         transition={{ duration: 1 }}
         className="h-[30%] w-[30%] hidden lg:block md:h-[35%] lg:h-[45%] md:w-[30%] lg:w-[29%] absolute top-[40%] md:top-[38%] lg:top-[38%] left-[25%] md:left-[10%] lg:left-[10%]"
@@ -34,6 +35,12 @@ const HomeLeft = () => {
         <Link to="/technology">
           <motion.button
             className="px-4 py-7 hidden lg:block md:p-6 lg:p-6 absolute  border-sky-400  w-[190%]  md:w-[110%] lg:w-[90%] left-0 border lg:text-3xl md:text-2xl text-xl   uppercase origin-left text-white"
+            initial={{
+              top: leftbutton ? "86%" : "33%",
+              backgroundColor: leftbutton
+                ? "rgba(0,0,0,0.2)"
+                : "rgb(144, 205, 244)",
+            }}
             animate={{
               top: leftbutton ? "86%" : "33%",
               scaleX: leftbutton ? 1.2 : 1,
@@ -45,12 +52,14 @@ const HomeLeft = () => {
           >
             <div className=" flex items-center gap-6">
               <motion.p
+                initial={{ marginLeft: leftbutton ? "0px" : "30px" }}
                 animate={{ marginLeft: leftbutton ? "0px" : "30px" }}
                 className=" ml-8"
               >
                 Techanology
               </motion.p>
               <motion.span
+                initial={{ opacity: 0 }}
                 animate={{ opacity: leftbutton ? 1 : 0 }}
                 className=" inline-block"
               >
@@ -60,6 +69,10 @@ const HomeLeft = () => {
           </motion.button>
         </Link>
         <motion.div
+          initial={{
+            top: leftbutton ? "0%" : "80%",
+            opacity: leftbutton ? 1 : 0,
+          }}
           animate={{
             top: leftbutton ? "0%" : "80%",
             opacity: leftbutton ? 1 : 0,
@@ -85,6 +98,7 @@ const HomeLeft = () => {
       </motion.div>
 
       <motion.div
+        initial={{ left: leftbutton ? "0%" : "-100%" }}
         animate={{ left: leftbutton ? "0%" : "-100%" }}
         transition={{ duration: 0.4 }}
         className=" h-screen w-full bg-black absolute left-[-100%]"
