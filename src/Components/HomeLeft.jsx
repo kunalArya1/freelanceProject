@@ -12,7 +12,7 @@ const HomeLeft = () => {
       <motion.div
         // onHoverStart={() => setleftbutton(true)}
         onMouseEnter={() => setleftbutton(true)}
-        className=" h-[13%] w-[55%] hidden lg:block lg:h-[13.5%] lg:w-[26%] md:w-[25%]  md:h-[15%]  top-[47%] md:top-[53%] lg:top-[53%] left-[25%] md:left-[10%] lg:left-[10%] absolute z-10 bg-red-600"
+        className=" h-[13%] w-[55%] hidden lg:block lg:h-[13.5%] lg:w-[26%] md:w-[25%]  md:h-[15%]  top-[47%] md:top-[53%] lg:top-[53%] left-[25%] md:left-[10%] lg:left-[10%] absolute z-10"
       ></motion.div>
       {/** Left Text Part */}
       <motion.div

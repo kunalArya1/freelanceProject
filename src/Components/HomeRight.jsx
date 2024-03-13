@@ -13,7 +13,7 @@ const HomeRight = () => {
         // onHoverStart={() => setleftbutton(true)}
         onMouseEnter={() => setrightbutton(true)}
         className=" h-[13%] w-[52%] hidden lg:block md:w-[25%] lg:w-[26%] top-[53%] right-[22%]
-        md:right-[13.8%] lg:right-[13%] absolute z-10 bg-red-500"
+        md:right-[13.8%] lg:right-[13%] absolute z-10 "
       ></motion.div>
       {/** Left Text Part */}
 
@@ -47,6 +47,9 @@ const HomeRight = () => {
             </div>
           </motion.button>
         </Link>
+
+        {/** MOBILE BUTTON */}
+
         <motion.div
           animate={{
             top: rightbutton ? "0%" : "80%",
