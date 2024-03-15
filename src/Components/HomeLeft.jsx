@@ -3,10 +3,11 @@ import ButtonContext from "../utils/ButtonContext";
 import leftvideo from "../assets/leftvideo.mp4";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const HomeLeft = () => {
   const { leftbutton, setleftbutton } = useContext(ButtonContext);
+  const navigate = useNavigate();
   return (
     <>
       <motion.div
@@ -17,11 +18,12 @@ const HomeLeft = () => {
 
       {/** MOBILE BUTTON */}
       <div className="absolute top-[67%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
-        <Link to="/technology">
-          <button className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[87vw] md:w-[50vw] text-3xl text-white uppercase">
-            Techanology
-          </button>
-        </Link>
+        <button
+          onClick={() => console.log("Cliekde")}
+          className=" p-5 py-7 bg-[#64AEDF80] lg:hidden w-[87vw] md:w-[50vw] text-3xl text-white uppercase"
+        >
+          Techanology
+        </button>
       </div>
 
       {/** Left Text Part */}

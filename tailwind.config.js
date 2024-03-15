@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         Montserrat: ["Montserrat", "san-serif"],
+        DMsans: ["DM Sans", "sans-serif"],
       },
     },
   },
