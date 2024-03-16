@@ -74,7 +74,7 @@ const Contact = () => {
                     />
                   </svg>
                 </span>
-                reach@everystage.com reach@everystage.com reach@everystage.com
+                reach@everystage.com 
               </p>
               <p>
                 <span>
