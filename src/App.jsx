@@ -3,6 +3,7 @@ import videobg from "./assets/HomePage.mp4";
 import HomeLeft from "./Components/HomeLeft";
 import HomeRight from "./Components/HomeRight";
 import logo from "./assets/logo.png";
+import { motion } from "framer-motion";
 
 const App = () => {
   document.title = "Home";
@@ -12,9 +13,14 @@ const App = () => {
         {/** LOGO  */}
 
         <div className=" absolute left-[50%] lg:-top-[4%] h-[10%] md:h-[10%] md:w-[5%] lg:h-[19%] lg:w-[10%] z-40  transform -translate-x-1/2 translate-y-1/2">
-          <div className="h-full w-full object-cover">
+          <motion.div
+            initial={{ scale: 18 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.9}}
+            className="h-full w-full object-cover"
+          >
             <img src={logo} alt="" />
-          </div>
+          </motion.div>
         </div>
         <HomeLeft />
         <HomeRight />

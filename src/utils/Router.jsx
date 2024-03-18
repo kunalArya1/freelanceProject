@@ -5,13 +5,20 @@ import App from "../App";
 import Contact from "../Components/Contact";
 
 const router = createBrowserRouter([
-  { path: "/", element: <App /> },
+  {
+    path: "/",
+    element: <App />,
+  },
   {
     path: "/technology",
     element: <Technology />,
   },
   {
     path: "/infrastructure",
+    element: <Infrastructure />,
+  },
+  {
+    path: "/infra",
     element: <Infrastructure />,
   },
   {

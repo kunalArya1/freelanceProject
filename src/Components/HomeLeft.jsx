@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import ButtonContext from "../utils/ButtonContext";
-import leftvideo from "../assets/leftvideo.mp4";
+import leftvideo from "../assets/leftVideo.mp4";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HomeLeft = () => {
   const { leftbutton, setleftbutton } = useContext(ButtonContext);
