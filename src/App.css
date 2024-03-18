@@ -1,0 +1,18 @@
+/* Add these styles to the parent container */
+.parent-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar on Internet Explorer/Edge */
+}
+
+/* Hide scrollbar on WebKit browsers */
+.parent-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Add these styles to the children divs */
+.child-item {
+  flex-shrink: 0; /* Prevent children from shrinking */
+}

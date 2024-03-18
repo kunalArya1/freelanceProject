@@ -8,7 +8,7 @@ const HeroEnergy = () => {
         <div className=" h-[35vh] lg:h-[40vh]  lg:w-[45vw] w-[80vw] m-auto mt-10">
           <img
             className=" h-full w-full object-cover"
-            src="https://s3-alpha-sig.figma.com/img/2977/5450/1697ac35049d85bd676d940a70655e56?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=llGpZ4CPF3Yzy8zkJVSmKHsrZOuVzuci4Bquk0LyBFuh9fdzVoGpVpS4fhXVpVjgES1X4wd5sjcYrdoCKJa8Fp3gl1qZpBccf29G9vc2prxFdN9~AUUPCQ2T1NzhShKLnpGQa5iOj9MbTT8Y78pxezlsUFgmabk0HbytyaIkcsys6LLo9YxYf5iZoAJMBykvPPL2dNjFT9Wgw9E5~uMXeTlTvdaokbmDu3X7s4aWPxg76IQ59J3APn0OswA74e3ZOa23tr2w2hVZiRNLAc8Kq8D72ANAlvCYoFie4aK6bH02lGChBiOd0Zew6vgZI10PRdtKDOzPmvJO9SrT723p-A__"
+            src="https://s3-alpha-sig.figma.com/img/2977/5450/1697ac35049d85bd676d940a70655e56?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H6m8X2KumFlAdL1ivNeg8tFOKWvyWbo3OsT5Hw1EO5lF-mC9aK9jZbptIfoU68uuCJS~jeilxCwbzfpaLDtzckvkB~2e-nyQxEr7N~WZfdcuvcjy4iL448f5JjIDiS-Qrty10vAoi6Vqj-Ls-AJ6PNolEmXbDKWmbNk7qnpB6ifCPfYLulx5ZvPugtxsr7NPBloI0erYUCRk08ECqn0krlhh11n7042IGYf0EfpS5ofpBqHP4CUtn50ZzOvy5q1JgVzSs8WR5uNGcsS4bEj~uXQwKylOt5b2gdIPz8EYuFo3vZ5q3UrlFONNfhPkO7OIMmWlaEFrw0jfNMgufbCTEw__"
             alt=""
           />
           <p>Solar Energy</p>
@@ -16,7 +16,7 @@ const HeroEnergy = () => {
         <div className="h-[35vh] lg:h-[40vh] lg:w-[45vw] w-[80vw] m-auto mt-10">
           <img
             className=" h-full w-full object-cover"
-            src="https://s3-alpha-sig.figma.com/img/5b81/f28b/9b8aa9ec636253e092fc9000b669a206?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FCb3CcPXJRIDBObcgTrSMou8uC8UIGLH8IKjGDBgs8BFP~NT4H55PFThBSAvbhiYaiCQTNFUKyUhNKdEwjv-RrGnXNYilDpjho2FHGw7DeZQJGTFwp9VPcGht0lIS-0QdI5U4x76eluBn1DMZb~6r6kH0wZiZ7OeEO8CI~GgBLuyn6Ehqmxk5mUll5l6DXtGhRvOOVqm6ofXf5RtkcF~8PFkd1mPFoHShtc5JCIz8WqIAj~Qq6cSEB3qT-kaJulMhEfWxO0LpJZ7Na3r~YM8O6~UbjABi3ABWvfSqDLeGdOe1w-Q62Q3hunbjsm0tqRrolYx4H~r8mdHygbGd5BlRw__"
+            src="https://s3-alpha-sig.figma.com/img/5b81/f28b/9b8aa9ec636253e092fc9000b669a206?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UtkkczvdSndosE5PAwRSrBv1Z-yTy1szpnNo0Rxi2WgUPG8hIjksTj029x7HpN9BREsuQTQTXnVndy9IIz45~yfB9aLgQ-LHpgoMfT7qSm0ETogSIcinCvxf5RBLNcrpTW0sJbVnPzzOxBXJaG7VDrER1XoRXOfPWb5rjI0bIqiLG09u-72wF06moZE8TFkXsew03qicix6eIBAL7SzlddpRFvwPEDnriWavp9GTG9SFBHVgQ5NlN1IK8TvkPCEuntc5N-TwtVPkB5mzNpf0G7F9t~hLWEM7yRtqcbOAdWMYiJhMeYsveeHvCb7tU7sgCh6a1OZLobTbgZ4kHh73sQ__"
             alt=""
           />
           <p>Hydro Energey</p>
@@ -24,7 +24,7 @@ const HeroEnergy = () => {
         <div className=" h-[35vh] lg:h-[40vh] lg:w-[45vw] w-[80vw] m-auto mt-10">
           <img
             className=" h-full w-full object-cover"
-            src="https://s3-alpha-sig.figma.com/img/109e/47e6/6ea929887a4aaadf03591310236cbfc8?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VwDaVaEPkJJGd1Wsyr~mKqiNTMmvxRmDnmPxSIAMq6u-om75ZfiI-N-Nwso3iRzMrtuHwWA35ZjQTqQfZmunBhIusdJHEtfYh0y0Xs9OOQw9rsf4hqy~HKrFmMB1WvSxURVMLw9GRzN3o7PLpvwaWsViHk4IzBd4bSuwWxs1ALtreMcsaYJ1yxVyxb5TUTXFJZocfx2OmGugAU68oiCwXXPPumjTiF-yUYWDdXMamNA4g7~-RhfPyOIJQnBn73astm9-FTB3C2sSBXhAOReqxLYKdSDNQ04kbsjxnX~Pe8n3IO~Peq2o-AhUsmNKI~0W0NFHjVVAMv53HIxhYSxrBA__"
+            src="https://s3-alpha-sig.figma.com/img/109e/47e6/6ea929887a4aaadf03591310236cbfc8?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lGUJxvaRvuSZY-uS46siiiNjZzX4d0zWqS6J4luVu2EeM2DRhyAXEbS5y41IP0XSt8PjMBUehu3ph1Tv72z6iZP-W2mc3d48y3u8Sm1Ip3FxGUNDizatfEMmKWMdSUhNDJM9lVbA0k8PKb41PS8aGJ9xldGLWySNWa8dMMcwqmNUsX9rA4CMaBYToi36Ifp-webUQU-iuQfC0JI2E-oyfi1Nv5keI3kCM6Qmgi4bWnGYF4IZWmXT0HeZJFB610QP4CEybnex8ii7st6wUkl6zzsH4a8r2tIwYm-rB0T1jSRBfdJF~gkRYh1XQ3yu3pZfMWmZw0L93hXXkpcYN18X5Q__"
             alt=""
           />
           <p className=" text-white">Wind Energy</p>
